@@ -1,0 +1,262 @@
+@charset "UTF-8";
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  background-color: rgba(255, 136, 0, 0.4274509804);
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1450px;
+  height: 1000px;
+  background: linear-gradient(120deg, #F47148 12.8%, #F49A48 84.39%);
+}
+
+.header__all {
+  display: flex;
+  flex-direction: row;
+  width: 1200px;
+}
+.header__title {
+  display: flex;
+  flex-direction: row;
+  padding-top: 37px;
+}
+.header__img {
+  position: relative;
+  display: inline-block;
+  padding-right: 20px;
+}
+.header__img img {
+  position: relative;
+  display: block;
+  width: 56px;
+  height: 56px;
+  transform: rotate(28.188deg);
+  z-index: 3;
+  padding-left: 25px;
+}
+.header__brand {
+  color: #FFF;
+  text-shadow: 0px 0px 30px #D53300;
+  font-family: "Montserrat Semibold";
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 75px; /* 300% */
+  letter-spacing: 5px;
+}
+.header__navigation {
+  display: flex;
+  height: 95px;
+  padding-left: 46px;
+  flex-direction: row;
+  padding-top: 27px;
+}
+.header__navtext {
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100px; /* 666.667% */
+  letter-spacing: 1.5px;
+  mix-blend-mode: screen;
+  flex-direction: row;
+  padding-right: 50px;
+}
+.header__navtext a {
+  font-family: "Montserrat Thin";
+  color: #FFF;
+  text-decoration: none;
+}
+.header__number {
+  display: flex;
+  flex-direction: row;
+  color: #FFF;
+  font-family: "Montserrat Semibold";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 900;
+  letter-spacing: 1.5px;
+  padding-top: 70px;
+  cursor: pointer;
+}
+.header__number img {
+  margin-top: -10px;
+  padding-right: 5px;
+  width: 41px;
+  height: 41px;
+  flex-shrink: 0;
+}
+
+.svg-pattern {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.text {
+  margin-left: -530px;
+}
+.text__header {
+  width: 611px;
+  height: 161px;
+  flex-shrink: 0;
+  color: #FFF;
+  font-family: "Montserrat Semibold";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 100px; /* 333.333% */
+  letter-spacing: 3px;
+}
+.text__list {
+  padding-top: 30px;
+  width: 359px;
+  height: 217px;
+  flex-shrink: 0;
+  color: #FFF;
+  font-family: "Montserrat Thin";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 60px; /* 300% */
+  letter-spacing: 2px;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(130deg, #FFD74B, #F44336);
+  width: 337px;
+  height: 100px;
+  filter: drop-shadow(0px 20px 20px rgba(0, 0, 0, 0.5));
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.button__text {
+  font-size: 24px;
+  font-weight: bold;
+  color: #A03900;
+  font-family: "Montserrat Semibold";
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+button {
+  border: none;
+  background: none;
+  padding: 0;
+  margin-top: 30px;
+  margin-left: -530px;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+.button:active {
+  background: gold;
+  box-shadow: 0 -200px 100px -120px crimson inset;
+  animation: background 3s infinite alternate;
+}
+@keyframes background {
+  50% {
+    background: skyblue;
+    box-shadow: 0 -200px 100px -100px yellowgreen inset;
+  }
+}
+
+.pets {
+  display: flex;
+  flex-direction: row;
+  margin-left: -540px;
+}
+.pets__block {
+  margin-top: 70px;
+  margin-right: 22px;
+  width: 228px;
+  height: 180.99px;
+  flex-shrink: 0;
+  border-radius: 29px;
+  background: #FCFF7A;
+  box-shadow: 0px 4px 15px 0px #FFD74B;
+  cursor: pointer;
+  transition: transform 0.4s;
+}
+.pets__block a {
+  position: absolute;
+  color: #A03900;
+  font-family: "Montserrat Semibold";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 100px; /* 666.667% */
+  letter-spacing: 1.5px;
+  text-decoration: none;
+  padding-left: 105px;
+  z-index: 1000;
+}
+.pets__block img {
+  margin-top: 40px;
+}
+.pets__two {
+  padding-left: 52px;
+}
+.pets #two {
+  padding-left: 33px;
+}
+
+.image {
+  position: relative;
+}
+
+#dog {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  margin-left: -200px;
+  z-index: 0;
+  transform: transform 0.2s;
+}
+
+#cat {
+  position: absolute;
+  top: 280px;
+  left: 0;
+  margin-left: -200px;
+  z-index: 1;
+  transform: transform 0.6s;
+}
+
+.containerall {
+  display: flex;
+  flex-direction: row;
+}
+
+.pets__block:active {
+  box-shadow: 4px 4px 21px 0px rgb(183, 110, 4);
+}
+
+.pets__block:hover {
+  transform: scale(1.2); /* (150% зум - Примечание: если масштаб слишком велик, он будет выходить за пределы видового экрана) */
+}
+
+#dog:hover {
+  transform: scale(1.1);
+}
+
+#cat:hover {
+  transform: scale(1.1);
+}/*# sourceMappingURL=style.css.map */
